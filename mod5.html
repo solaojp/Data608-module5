@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CUNY 608 - Module 5</title>
         <h1>CUNY 608 - HW 5</h1>
         <script type="text/javascript"></script>
     </head>
@@ -45,14 +44,14 @@
             finalvalue = finalvalue + '</table>';
             return finalvalue
         };
-        function displayTable(){
+        function display(){
             var y = document.getElementById("target");
             y.innerHTML = multiple(document.getElementById('number').value);
         }
         </script>
         <form name="myTable">
             <input id="number" type="number" size="4">
-            <input type="button" value="Generate Table" onClick="displayTable();">
+            <input type="button" value="Generate Table" onClick="display();">
         </form>
         <br>
         <div id="target"></div>
